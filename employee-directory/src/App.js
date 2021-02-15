@@ -1,6 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState, useEffect } from 'react';
+import API from './utils/API';
+import Table from './components/Table';
+import EmployeeRow from './components/Row';
+import Search from './components/Search';
 function App() {
   return (
     <div className="App">
