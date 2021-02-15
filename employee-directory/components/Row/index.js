@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Row() {
+function Row(props) {
     console.log(props);
     return (
         <tr>
