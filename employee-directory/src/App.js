@@ -1,24 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import API from './utils/API';
-import Home from './components/Home';
-import Wrapper from './components/Wrapper';
-import Header from './components/Header';
+import React from "react";
+import Main from "./components/main/main";
+import Header from "./components/header/header";
 
+import "./App.css";
 
 function App() {
-
-
-const [employeeArr, setEmployeeArr] = useState([]);
-const []
-
   return (
-    <Router>
-      <Wrapper>
+    <div className="App">
         <Header />
-        <Route exact path = '/' component = {Home} />
-      </Wrapper>
-    </Router>
- 
+        <Main />
+    </div>
   );
 }
 
