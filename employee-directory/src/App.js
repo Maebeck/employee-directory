@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import API from './utils/API';
-import Table from './components/Table';
-import EmployeeRow from './components/Row';
-import Search from './components/Search';
+import Home from './components/Home';
+import Wrapper from './components/Wrapper';
+import Header from './components/Header';
+
+
 function App() {
+
+
+const [employeeArr, setEmployeeArr] = useState([]);
+const []
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Wrapper>
+        <Header />
+        <Route exact path = '/' component = {Home} />
+      </Wrapper>
+    </Router>
+ 
   );
 }
 
